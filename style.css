@@ -1,3 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+body {
+    background-color: #2D4356;
+}
 p {
     color: brown;
+}
+header {
+    display: flex;
+    justify-content: space-evenly;
+   
+}
+header niv {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+header niv .circle1 {
+    height: 300px;
+    width: 300px;
+    display: inline-block;
+    position:relative ;
+    border-radius:50% ;
+    background-color: #2D4356;
+    border: 5px solid skyblue;
+    box-shadow: 2px 5px 20px lightblue inset ;
+    overflow: hidden;
+    
+}
+header niv .circle1:hover {
+    animation: dogo 2s ease-in-out forwards; 
+}
+
+.innercircle {
+    opacity: 1;
+    height: 50px;
+    width: 250px;
+    border-radius: 50% 0% 0% 50%;
+    background-color: orange;
+    border: 5px solid white;
+    box-shadow: 2px 2px 20px gray;
+    display: inline-block;
+    position: absolute;
+    bottom: 30px;
+    left: 40px;
+
+}
+@keyframes dogo {
+    to {
+        transform: rotateY(30deg);
+    }
+
+    }
+    
+
+img {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    
+
 }
